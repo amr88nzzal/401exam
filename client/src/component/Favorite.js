@@ -13,7 +13,7 @@ export class Favorite extends Component {
   }
   componentDidMount() {
     const url = process.env.REACT_APP_SERVER_URL;
-    axios.get(`http://localhost:8080//favorite`)
+    axios.get(`http://localhost:8080/favorite`)
       .then(res => {
         const data = res.data;
         console.log(url);
@@ -25,7 +25,7 @@ export class Favorite extends Component {
 
   }
   update(){
-    
+
   }
   render() {
 
